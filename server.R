@@ -28,6 +28,5 @@ shinyServer(
         function(input, output) {
                 output$o_prediction <- renderPrint({prediction(input$i_Pclass,input$i_Sex,
                                                                input$i_Age,input$i_family)})
-                #output$o_prediction <- renderPrint({input$i_Pclass})
         }
 )
